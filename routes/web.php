@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/profile', function () {
+    return view('profil');
+});
+
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+ Route::get("home/about",'HomeController@about');
